@@ -13,7 +13,9 @@
 ---
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/AUTOSAR_Layered_Architecture.png" alt="AUTOSAR Architecture Diagram" width="700"/>
+  <img src="./AUTOSAR_Layered_Architecture.png" alt="AUTOSAR Layered Architecture" width="700">
+  <br>
+  <em>AUTOSAR Layered Architecture</em>
 </p>
 
 ---
