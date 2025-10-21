@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/AUTOSAR_Logo.svg" alt="AUTOSAR Logo" width="250"/>
+  <img src="./A_digital_graphic_banner_showcases_AUTOSAR_Softwar.png" alt="AUTOSAR Software Design & Drivers Course by Mohamed Tarek" width="100%">
 </p>
 
 ---
