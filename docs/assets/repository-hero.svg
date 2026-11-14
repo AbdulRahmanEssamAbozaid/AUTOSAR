@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+<title id="title">AUTOSAR Drivers</title><desc id="desc">TM4C123 · Embedded C · MCAL coursework</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1728"/><stop offset="1" stop-color="#16373e"/></linearGradient><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#9abac8" stroke-opacity=".06"/></pattern></defs>
+<rect width="1200" height="260" rx="22" fill="url(#bg)"/><rect width="1200" height="260" rx="22" fill="url(#grid)"/>
+<g font-family="Arial,Helvetica,sans-serif"><text x="44" y="57" font-size="12" letter-spacing="2" fill="#8cddc1">ABDULRAHMAN ESSAM ABOZAID</text><text x="40" y="127" font-size="44" font-weight="700" fill="#eff6f8">AUTOSAR Drivers</text><text x="44" y="175" font-size="19" fill="#a8c4d1">TM4C123 · Embedded C · MCAL coursework</text><path d="M44 209H630" stroke="#365766"/></g>
+<g fill="none" stroke="#79c9b3" stroke-width="2"><rect x="960" y="67" width="116" height="126" rx="17"/><rect x="979" y="87" width="78" height="86" rx="9" stroke="#375e68"/><path d="M960 96H890V60H844M960 133H854M960 168H914V208H844M1076 96h64m-64 37h64m-64 35h64"/></g><g fill="#90debf"><circle cx="844" cy="60" r="4"/><circle cx="854" cy="133" r="4"/><circle cx="844" cy="208" r="4"/></g>
+</svg>

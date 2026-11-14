@@ -1,183 +1,38 @@
-<p align="center">
-  <img src="./A_digital_graphic_banner_showcases_AUTOSAR_Softwar.png" alt="AUTOSAR Software Design & Drivers Course by Mohamed Tarek" width="100%">
-</p>
+<p align="center"><img src="docs/assets/repository-hero.svg" width="1200" alt="AUTOSAR Drivers" /></p>
 
----
+# AUTOSAR Drivers
 
-# 🚗 AUTOSAR Software Design & Device Drivers Course
+AUTOSAR software architecture coursework and driver exercises for the TM4C123GH6PM. The repository brings together a DIO workspace and an application workspace with Port, DIO, MCU, timing, button and LED modules.
 
-> **Duration:** 10 Sessions  
-> **Project:** AUTOSAR Port Driver Implementation  
-> **Focus:** Software Architecture, Device Drivers, Functional Safety & MISRA Rules  
+[Overview](#overview) · [Repository files](https://github.com/AbdulRahmanEssamAbozaid/AUTOSAR/tree/master)
 
----
+## Overview
 
-<p align="center">
-  <img src="./AUTOSAR_Layered_Architecture.png" alt="AUTOSAR Layered Architecture" width="700">
-  <br>
-  <em>AUTOSAR Layered Architecture</em>
-</p>
+<p align="center"><img src="docs/assets/repository-flow.svg" width="1000" alt="Application tasks → MCAL drivers → TM4C123 GPIO" /></p>
 
----
+## Explore the repository
 
-## 🧠 Course Overview
+| Location | Purpose |
+| --- | --- |
+| [DIO workspace](AUTOSAR_Dio_WS/Dio_MT) | DIO driver, configuration and a small main program. |
+| [Application workspace](AUTOSAR_Project_WS/AUTOSAR_Project) | Port configuration, application tasks and board support. |
+| [Port configuration](AUTOSAR_Project_WS/AUTOSAR_Project/Port_PBcfg.c) | Pin configuration used by the application. |
 
-This course provides a **comprehensive understanding of AUTOSAR architecture**, software design concepts, and practical development of AUTOSAR-compliant modules, with a special focus on **Port Driver implementation**.
+## Open and build
 
----
+1. Install Code Composer Studio with TM4C support and a compatible TI ARM compiler. The checked-in project records CCS 12.4.0 and compiler 20.2.7.LTS.
+2. Import the existing CCS project from the workspace you want to explore.
+3. Select TM4C123GH6PM and review the linker file, clock configuration and pin assignments.
+4. Build the project, then use a matching Tiva C board and debugger to inspect its behavior.
 
-## 🧩 Course Contents
+The repository contains separate CCS projects. Build the selected project through its project configuration.
 
-### 🧱 1. Introduction to AUTOSAR
+## Architecture reference
 
-#### 🔸 Embedded Software Design
-- Software Layered Architecture  
-- Static and Dynamic Design  
+![AUTOSAR layered architecture](AUTOSAR_Layered_Architecture.png)
 
-#### 🔸 Automotive Market
-- Types of Automotive Companies  
-- Automotive Software Challenges  
+The application schedules button, LED and application tasks. Start with [App.c](AUTOSAR_Project_WS/AUTOSAR_Project/App.c), then follow calls into the configured drivers.
 
-#### 🔸 Introduction to AUTOSAR
-- Why AUTOSAR?  
-- Main Objectives & Challenges  
-- AUTOSAR Partnership Structure  
-- AUTOSAR Scope and Releases  
+## Course material and attribution
 
----
-
-### 🏗️ 2. AUTOSAR Software Architecture
-
-#### ⚙️ BSW (Basic Software) Layers
-- **MCAL Layer**  
-- **ECUAL Layer**  
-- **Service Layer**  
-- **Complex Drivers Layer**  
-> Each layer’s modules and their functionalities are described in detail.
-
-#### 🧩 BSW Module Types
-- AUTOSAR Driver  
-- AUTOSAR Interface Module  
-- AUTOSAR Handler Module  
-- AUTOSAR Manager Module  
-
-#### 📡 AUTOSAR Stacks
-- Communication Stack  
-- Memory Stack  
-- Diagnostics Stack  
-- Watchdog Stack  
-- IO Stack  
-
-#### 🔄 RTE and Application Layers
-- RTE (Run-Time Environment)  
-- Application SW Component  
-- Virtual Function Bus (VFB)  
-- SWC Data Types, Interfaces, Ports, and Runnables  
-- Composite SWC  
-
----
-
-### 💡 3. AUTOSAR Design Example — Interior Light Control ECU
-
-- ECU Software Components  
-- Communication between SWCs via VFB  
-- Mapping SWCs across ECUs  
-- Communication between SWCs and BSW Layer  
-- AUTOSAR Layer Model  
-
----
-
-### ⚙️ 4. AUTOSAR Workflow
-
-- **System Description**
-  - SWC Description  
-  - SWC Development Process  
-  - System Constraint Description  
-  - ECU Resource Description  
-  - System Description  
-- **ECU Configuration (ECUC)**  
-- **Executable (.elf) for ECU**
-
----
-
-## 🧰 AUTOSAR Device Drivers Course
-
-#### 🧩 Modular Programming
-- AUTOSAR API Specification  
-- AUTOSAR Module Data Types  
-- Synchronous vs. Asynchronous APIs  
-- Reentrant vs. Non-Reentrant APIs  
-- Callback Functions & Notifications  
-- Scheduled Functions  
-- Interrupt Service Routine (ISR) & Categories  
-
-#### ⚠️ AUTOSAR Error Reporting
-- DET (Development Error Tracer)  
-- DEM (Diagnostic Event Manager)  
-
-#### ⚙️ Module Configuration Variants
-- Pre-Compile Configurations  
-- Link-Time Configurations  
-- Post-Build Configurations  
-
-#### 🧱 Core AUTOSAR Concepts
-- Platform Type Abstraction (Standard Types)  
-- Compiler Abstraction  
-- Memory Abstraction (Memory Mapping File)  
-- Reading and Understanding AUTOSAR SWS Documents  
-
----
-
-## 💻 AUTOSAR C Implementation & MISRA-2004 Rules
-
-- AUTOSAR C Implementation Guidelines  
-- MISRA-C:2004 Standard Rules  
-- Static Analysis using **Klocwork**  
-- ASIL-D Safety Rules  
-
----
-
-## 🚌 Automotive Communication Buses
-
-- **LIN Protocol**  
-- **CAN Protocol**
-
----
-
-## 🛡️ Automotive Functional Safety
-
-- Functional Safety Overview  
-- Basics & ASIL Determination  
-- Introduction to ISO 26262  
-- ISO 26262 Parts Overview:
-  - Functional Safety Management  
-  - Concept Phase  
-  - System Level Development  
-  - Hardware Level Development  
-  - Software Level Development  
-  - Safety Support Processes  
-- Safety Lifecycle  
-- **Final Exam**
-
----
-
-## 🧩 Final Course Project
-
-> **AUTOSAR Port Driver Implementation**
-
-This project focuses on designing and implementing the **AUTOSAR PORT driver** following AUTOSAR specifications and development guidelines.
-
----
-
-## 🏁 Outcome
-
-By the end of this course, you will:
-- Understand **AUTOSAR layered architecture** and software workflow  
-- Develop **AUTOSAR-compliant drivers** (e.g., Port Driver)  
-- Apply **MISRA-C rules** and **ISO 26262 safety standards**  
-- Work confidently with **AUTOSAR tools and configurations**  
-
----
-
-⭐ **Show your support!**  
-If you like this repository, consider giving it a **star** 🌟 and sharing it with others interested in automotive embedded systems!
+The existing coursework references **Mohamed Tarek**. Source-file author notices and course attribution are retained. The [original course notes](docs/original-readme.md) cover layered architecture, driver concepts, configuration variants, MISRA and functional safety topics.
