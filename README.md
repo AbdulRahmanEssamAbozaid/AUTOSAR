@@ -27,6 +27,8 @@ AUTOSAR software architecture coursework and driver exercises for the TM4C123GH6
 
 The repository contains separate CCS projects. Build the selected project through its project configuration.
 
+The existing GitHub Actions workflow is a generic CMake starter and expects a root CMakeLists.txt. The checked-in examples use CCS project files, so that workflow currently fails before compilation. It needs a toolchain-aware update. The build instructions above follow the actual CCS configuration.
+
 ## Architecture reference
 
 ![AUTOSAR layered architecture](AUTOSAR_Layered_Architecture.png)
